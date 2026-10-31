@@ -26,9 +26,15 @@ VLANS 1,10,20: OPNSense (virtual router + firewall), GS308E switch + ethernet wi
 
 4. configs and why
    - Tailscale subnet routing
+     
+To stream my music library away from my home Wifi, I installed Tailscale on the Proxmox host (Linux Debian OS), enabling a private and encrypted network connection between the devices via tailnet [1].
+     
    - PBS
+     
    - OPNsense VLANS and firewall rules
+     
    - Switch trunk setup on NETGEAR MANAGED SWITCH
+     
 5. music automation pipeline
 
 6. Troubleshoot Stories
