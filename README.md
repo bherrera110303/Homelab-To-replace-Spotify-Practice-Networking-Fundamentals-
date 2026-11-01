@@ -34,9 +34,9 @@ To stream my music library away from my home Wifi, I installed Tailscale on the 
    - PBS
 
 Proxmox Backup Server (PBS) acts as my disaster recovery center. In case my Proxmox server experiences downtime or the Jellyfin LXC container (CT 1001) is corrupted, I can easily restore the Jellyfin container from the most recent stored Jellyfin backup. The Proxmox host is scheduled to create backups daily at 12:00 AM and sends them to PBS. To manage backups from filling up the limited storage of the backup disk, PBS runs scheduled prune jobs [2] that discard every backup except:
-   - 1 per day for the last 7 days
-   - 1 per week for the last 4 weeks
-   - 1 per month for the last 3 months.
+   -- 1 per day for the last 7 days
+   -- 1 per week for the last 4 weeks
+   -- 1 per month for the last 3 months.
 Everyday at 12:00 AM, PBS runs garbage collection [3], which deletes the data left behind by pruned backups from the ASUS laptop's disk.
 To ensure the backups work, I restored one to a test Jellyfin container (CT 999), and its media and storage matched the original Jellyfin container.
      
