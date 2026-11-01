@@ -54,7 +54,8 @@ To ensure the backups work, I restored one to a test Jellyfin container (CT 999)
 
 7. Next Steps
 8. Glossary:
-   [1] Tailnet - Tailscale creates an encrypted network between my devices that have Tailscale enabled: my phone + Proxmox host.
+   [1] Tailnet - Tailscale creates an encrypted network between my devices that have Tailscale enabled: my phone + Proxmox host. \
+   
    [2] Prune Job - PBS deletes the table of contents/index of every past backup that isn't kept by the configured schedule backup policy: 7 daily, 4 weekly, 3 monthly.
    [3] Garbage Collection - PBS deletes the pages, stored on the Asus's laptop disk, that no table of contents/index points to.
    
